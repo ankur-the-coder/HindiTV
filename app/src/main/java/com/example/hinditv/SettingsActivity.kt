@@ -197,16 +197,11 @@ class SettingsActivity : AppCompatActivity() {
             .show()
     }
 
-    private inner class SettingsAdapter : RecyclerView.Adapter<SettingsAdapter.VH>() {
+    private inner class SettingsAdapter : RecyclerView.Adapter<SettingsVH>() {
 
-        class VH(v: View) : RecyclerView.ViewHolder(v) {
-            val title: TextView = v.findViewById(R.id.sTitle)
-            val value: TextView = v.findViewById(R.id.sValue)
-        }
-
-        override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VH {
+        override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SettingsVH {
             val v = LayoutInflater.from(parent.context).inflate(R.layout.item_setting, parent, false)
-            val h = VH(v)
+            val h = SettingsVH(v)
             v.setOnClickListener {
                 val p = h.bindingAdapterPosition
                 if (p != RecyclerView.NO_POSITION) items[p].action()
@@ -214,12 +209,17 @@ class SettingsActivity : AppCompatActivity() {
             return h
         }
 
-        override fun onBindViewHolder(h: VH, position: Int) {
-            val it = items[position]
-            h.title.text = it.title
-            h.value.text = it.value()
+        override fun onBindViewHolder(h: SettingsVH, position: Int) {
+            val item = items[position]
+            h.title.text = item.title
+            h.value.text = item.value()
         }
 
         override fun getItemCount() = items.size
     }
+}
+
+class SettingsVH(v: View) : RecyclerView.ViewHolder(v) {
+    val title: TextView = v.findViewById(R.id.sTitle)
+    val value: TextView = v.findViewById(R.id.sValue)
 }
