@@ -288,12 +288,12 @@ class SettingsActivity : AppCompatActivity() {
             .show()
     }
 
-    private inner class SettingsAdapter : RecyclerView.Adapter<SettingsAdapter.VH>() {
+    private class VH(v: View) : RecyclerView.ViewHolder(v) {
+        val title: TextView = v.findViewById(R.id.sTitle)
+        val value: TextView = v.findViewById(R.id.sValue)
+    }
 
-        class VH(v: View) : RecyclerView.ViewHolder(v) {
-            val title: TextView = v.findViewById(R.id.sTitle)
-            val value: TextView = v.findViewById(R.id.sValue)
-        }
+    private inner class SettingsAdapter : RecyclerView.Adapter<VH>() {
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VH {
             val v = LayoutInflater.from(parent.context).inflate(R.layout.item_setting, parent, false)
