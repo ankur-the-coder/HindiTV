@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/bg_main</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="colorPrimary">@color/accent</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="alertDialogTheme">@style/DialogTheme</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/bg_dialog</item>
+        <item name="android:textColorPrimary">@color/text</item>
+        <item name="android:textColorSecondary">@color/text_dim</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <style name="PickerDialog" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/bg_main</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="Chip">
+        <item name="android:background">@drawable/bg_chip</item>
+        <item name="android:textColor">@color/chip_text</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingLeft">18dp</item>
+        <item name="android:paddingRight">18dp</item>
+    </style>
+
+    <style name="IconBtn">
+        <item name="android:background">@drawable/bg_chip</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:padding">11dp</item>
+    </style>
+
+    <style name="Badge">
+        <item name="android:background">@drawable/bg_badge</item>
+        <item name="android:textColor">@color/accent_dark</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">7dp</item>
+        <item name="android:paddingRight">7dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+    </style>
+</resources>

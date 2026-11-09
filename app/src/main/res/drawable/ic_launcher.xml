@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- tile -->
+    <path android:fillColor="#0B1020"
+        android:pathData="M26,0h56a26,26 0 0 1 26,26v56a26,26 0 0 1 -26,26h-56a26,26 0 0 1 -26,-26v-56a26,26 0 0 1 26,-26z" />
+    <path android:fillColor="#16223E"
+        android:pathData="M26,0h56a26,26 0 0 1 26,26v8h-108v-8a26,26 0 0 1 26,-26z" />
+    <!-- antenna -->
+    <path android:strokeColor="#F4F6FB" android:strokeWidth="4" android:strokeLineCap="round"
+        android:pathData="M54,32L40,16 M54,32L68,16" />
+    <path android:fillColor="#FF9F1C" android:pathData="M54,34m-3.2,0a3.2,3.2 0 1,1 6.4,0a3.2,3.2 0 1,1 -6.4,0" />
+    <!-- TV body -->
+    <path android:fillColor="#1B2542" android:strokeColor="#FF9F1C" android:strokeWidth="4.5"
+        android:pathData="M26,36h56a8,8 0 0 1 8,8v28a8,8 0 0 1 -8,8h-56a8,8 0 0 1 -8,-8v-28a8,8 0 0 1 8,-8z" />
+    <!-- play button -->
+    <path android:fillColor="#FF9F1C" android:pathData="M46,46l22,12l-22,12z" />
+    <path android:fillColor="#FFD08A" android:pathData="M46,46l22,12l-6,0z" />
+    <!-- tricolour base -->
+    <path android:fillColor="#FF9933" android:pathData="M34,91h13v3.4h-13z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M47.5,91h13v3.4h-13z" />
+    <path android:fillColor="#138808" android:pathData="M61,91h13v3.4h-13z" />
+</vector>
